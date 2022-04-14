@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BOLLYWOOD GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.freeiconspng.com/uploads/rockstar-squarepants-transparent-background-19.png" </head>
+
+    <body>
+        <!--Main Heading-->
+        <div class="heading">
+            <h1>BOLLYWOOD GUESS</h1>
+        </div>
+
+        <div class="background">
+            <div class="container">
+
+                <!--Changing Image based on correct answers-->
+                <h2>Press Any Key To Guess This Word!</h2>
+                <div>
+                    <img id="image" src="./assets/images/arrow.gif" width="40%" height="200">
+                </div>
+
+                <!--Current Word Container-->
+                <div>
+                    <h3 id="currentword">_ _ _ _ _</h3>
+                </div>
+                <div id="scoreboard">
+                    <!--Guesses left Container-->
+                    <div class="sidebar">
+                        <h3>GUESSES LEFT:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wins counter Container-->
+                    <div class="sidebar">
+                        <h3>WINS:
+                            <span id="winstracker"></span>
+                        </h3>
+                    </div>
+                    <!--Loss counter Container-->
+                    <div class="sidebar">
+                        <h3>LOSSES:
+                            <span id="losstracker"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wrong guesses container-->
+                    <div class="sidebar">
+                        <h3>LETTERS YOU GUESSED WRONG:
+                            <span id="playerguesses"></span>
+                        </h3>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--AUDIO FILES-->
+        <div>
+            <!--raees-->
+            <audio id="raees">
+                <source src="./assets/audio/Raees.mp3" type="audio/mp3">
+            </audio>
+            <!--dabangg-->
+            <audio id="dabangg">
+                <source src="./assets/audio/Dabangg Dabangg - Sajid.mp3" type="audio/mp3">
+            </audio>
+            <!--dangal-->
+            <audio id="dangal">
+                <source src="./assets/audio/Dangal Movie - Bgm ! Bollywood.mp3" type="audio/mp3">
+            </audio>
+            <!--race-->
+            <audio id="race">
+                <source src="./assets/audio/race.mp3" type="audio/mp3">
+            </audio>
+            <!--rockstar-->
+            <audio id="rockstar">
+                <source src="./assets/audio/Phir Se Ud Chala Song.mp3" type="audio/mp3">
+            </audio>
+            <!--ittefaq-->
+            <audio id="ittefaq">
+                <source src="./assets/audio/Mudhi Mudhi Ittefaq.mp3" type="audio/mp3">
+            </audio>
+            <!--toilet-->
+            <audio id="toilet">
+                <source src="./assets/audio/Toilet Ek Prem Katha - Hans Mat Pagli Pyar Ho Jayega! ! Akshay Kumar, Bhumi !.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>
